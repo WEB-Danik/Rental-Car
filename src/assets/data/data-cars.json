@@ -1,0 +1,152 @@
+[
+  {
+    "id": "11a3ab35-07b8-4336-b06b-602cdc309f2c",
+    "year": 2008,
+    "brand": "Buick",
+    "model": "Enclave",
+    "type": "SUV",
+    "img": "https://ac.goit.global/car-rental-task/9582-ai.jpg",
+    "description": "The Buick Enclave is a stylish and spacious SUV known for its comfortable ride and luxurious features.",
+    "fuelConsumption": "10.5",
+    "engineSize": "3.6L V6",
+    "accessories": [
+      "Leather seats",
+      "Panoramic sunroof",
+      "Premium audio system"
+    ],
+    "functionalities": [
+      "Power liftgate",
+      "Remote start",
+      "Blind-spot monitoring"
+    ],
+    "rentalPrice": "40",
+    "rentalCompany": "Luxury Car Rentals",
+    "address": "123 Example Street, Kiev, Ukraine",
+    "rentalConditions": [
+      "Minimum age: 25",
+      "Valid driver's license",
+      "Security deposit required"
+    ],
+    "mileage": 5858
+  },
+  {
+    "id": "324710c7-afe3-4e17-aba4-07e2b278179d",
+    "year": 2019,
+    "brand": "Volvo",
+    "model": "XC90",
+    "type": "SUV",
+    "img": "https://ac.goit.global/car-rental-task/9584-ai.jpg",
+    "description": "The Volvo XC90 is a premium SUV that offers exceptional safety, advanced technology, and elegant design.",
+    "fuelConsumption": "8.3",
+    "engineSize": "2.0L 4-cylinder",
+    "accessories": [
+      "Nappa leather seats",
+      "Bowers & Wilkins premium sound system",
+      "Head-up display"
+    ],
+    "functionalities": [
+      "IntelliSafe advanced safety features",
+      "Pilot Assist semi-autonomous driving",
+      "Four-zone automatic climate control"
+    ],
+    "rentalPrice": "50",
+    "rentalCompany": "Premium Auto Rentals",
+    "address": "456 Example Avenue, Lviv, Ukraine",
+    "rentalConditions": [
+      "Minimum age: 21",
+      "Valid driver's license",
+      "Proof of insurance required"
+    ],
+    "mileage": 5352
+  },
+  {
+    "id": "5ed1cf8e-d493-459e-9cc6-1a1ca22a1900",
+    "year": 2020,
+    "brand": "Volvo",
+    "model": "XC60",
+    "type": "SUV",
+    "img": "https://ac.goit.global/car-rental-task/9586-ai.jpg",
+    "description": "The Volvo XC60 is a compact luxury SUV with a beautiful interior, strong performance, and advanced safety features.",
+    "fuelConsumption": "7.9",
+    "engineSize": "2.0L 4-cylinder",
+    "accessories": [
+      "Premium leather seats",
+      "Harman Kardon audio system",
+      "Hands-free power tailgate"
+    ],
+    "functionalities": [
+      "City Safety collision avoidance technology",
+      "Pilot Assist with adaptive cruise control",
+      "9-inch Sensus touchscreen infotainment system"
+    ],
+    "rentalPrice": "40",
+    "rentalCompany": "Luxury Car Rentals",
+    "address": "789 Example Boulevard, Odessa, Ukraine",
+    "rentalConditions": [
+      "Minimum age: 23",
+      "Valid driver's license",
+      "Credit card required"
+    ],
+    "mileage": 5966
+  },
+  {
+    "id": "e7ffb97e-9fe4-44f1-ae73-34e308afa82d",
+    "year": 2006,
+    "brand": "HUMMER",
+    "model": "H2",
+    "type": "SUV",
+    "img": "https://ac.goit.global/car-rental-task/9587-ai.jpg",
+    "description": "The HUMMER H2 is a rugged and powerful SUV that stands out with its imposing presence and off-road capabilities.",
+    "fuelConsumption": "19.8",
+    "engineSize": "6.0L V8",
+    "accessories": [
+      "Heated leather seats",
+      "Bose premium sound system",
+      "Off-road package"
+    ],
+    "functionalities": [
+      "Electronic locking front and rear differentials",
+      "Stabilitrak stability control",
+      "Tire pressure monitoring system"
+    ],
+    "rentalPrice": "50",
+    "rentalCompany": "Adventure Car Rentals",
+    "address": "321 Example Road, Kharkiv, Ukraine",
+    "rentalConditions": [
+      "Minimum age: 25",
+      "Valid driver's license",
+      "Security deposit required"
+    ],
+    "mileage": 4771
+  },
+  {
+    "id": "a57f5544-e771-439d-bf32-06fe429b6352",
+    "year": 2016,
+    "brand": "Subaru",
+    "model": "Outback",
+    "type": "SUV",
+    "img": "https://ac.goit.global/car-rental-task/9590-ai.jpg",
+    "description": "The Subaru Outback is a versatile and reliable SUV that combines off-road capability with a comfortable and spacious interior.",
+    "fuelConsumption": "8.7",
+    "engineSize": "2.5L 4-cylinder",
+    "accessories": [
+      "Leather upholstery",
+      "Power moonroof",
+      "Harman Kardon premium audio system"
+    ],
+    "functionalities": [
+      "Symmetrical All-Wheel Drive",
+      "X-Mode off-road assist",
+      "Subaru EyeSight driver-assist system"
+    ],
+    "rentalPrice": "30",
+    "rentalCompany": "Adventure Car Rentals",
+    "address": "987 Example Street, Kyiv, Ukraine",
+    "rentalConditions": [
+      "Minimum age: 21",
+      "Valid driver's license",
+      "Credit card required"
+    ],
+    "mileage": 4061
+  }
+]

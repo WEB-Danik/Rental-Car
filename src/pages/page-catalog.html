@@ -10,6 +10,7 @@
     <script type="module" src="/src/components/main.js" defer></script>
     <script type="module" src="/src/components/select-builder.js" defer></script>
     <script type="module" src="/src/form/filter-form.js" defer></script>
+    <script type="module" src="/src/components/build-car-cards.js" defer></script>
 </head>
 <body>
 <div id="wrapper">
@@ -91,7 +92,7 @@
                             type="number"
                             name="mileageFrom"
                             id="mileage_from"
-                            placeholder="For"
+                            placeholder="From"
                             min="1"
                     />
                     <input
@@ -105,9 +106,8 @@
             </div>
 
             <button type="submit" id="search_btn">Search</button>
-
         </form>
-        <h1>Catalog Cars</h1>
+        <div class="container_catalog_cars"></div>
     </main>
 </div>
 </body>
