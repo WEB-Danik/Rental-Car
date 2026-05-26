@@ -1,5 +1,3 @@
-// const loadMore = document.getElementById('btn_load_more');
-
 export const createListCatalog = (cars) => {
 
     return cars.map(car => {

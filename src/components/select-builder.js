@@ -21,7 +21,8 @@ const carBrand = [
     "Nissan",
     "Pontiac",
     "Subaru",
-    "Volvo"
+    "Volvo",
+    ""
 ];
 
 refs.allSelects.forEach(select => {
@@ -95,7 +96,7 @@ refs.allSelects.forEach(select => {
 // CLOSE OUTSIDE
 document.addEventListener('click', event => {
 
-    allSelects.forEach(select => {
+    refs.allSelects.forEach(select => {
 
         if (!select.contains(event.target)) {
             select.classList.remove('active');

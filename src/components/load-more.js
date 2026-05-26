@@ -9,7 +9,6 @@ const handleLoadMore = async () => {
 
     const carsData = await getDataCars(page);
     const cars = carsData.cars;
-    console.log('Cars handle', cars);
 
     if (page >= carsData.totalPages) {
         refs.loadMore.hidden = true;

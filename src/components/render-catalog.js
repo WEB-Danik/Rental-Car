@@ -4,9 +4,9 @@ import {refs} from "./refs.js";
 
 const renderCatalog  = async () => {
     let page = 1;
-    const carsData = await getDataCars(page);
+    let carBrand = '';
+    const carsData = await getDataCars(page, carBrand);
     const cars = carsData.cars;
-    console.log('Cars', cars);
 
     const markup = createListCatalog(cars)
 
