@@ -1,4 +1,7 @@
 .container_catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
 
     width: 100%;
@@ -162,4 +165,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 48px;
+}
+.btn_load_more {
+    width: 156px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1px solid rgba(52, 112, 255, 1);
+    margin-top: 80px;
+
+    color: rgba(16, 24, 40, 1);
+
+    font-size: 16px;
+    font-weight: 600;
 }

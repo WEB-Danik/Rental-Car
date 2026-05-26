@@ -1,22 +1,30 @@
+import {refs} from "./refs.js";
+
 const carBrand = [
-    'Toyota',
-    'Mercedes',
-    'BMW',
-    'Honda',
-    'Mazda',
-    'BYD',
-    'Audi',
-    'Bentley',
-    'Buick',
-    'Chevrolet',
-    'Chrysler',
-    'GMC',
-    'HUMMER',
+    "Aston Martin",
+    "Audi",
+    "BMW",
+    "Bentley",
+    "Buick",
+    "Chevrolet",
+    "Chrysler",
+    "GMC",
+    "HUMMER",
+    "Hyundai",
+    "Kia",
+    "Lamborghini",
+    "Land Rover",
+    "Lincoln",
+    "MINI",
+    "Mercedes-Benz",
+    "Mitsubishi",
+    "Nissan",
+    "Pontiac",
+    "Subaru",
+    "Volvo"
 ];
 
-const allSelects = document.querySelectorAll('.custom_select');
-
-allSelects.forEach(select => {
+refs.allSelects.forEach(select => {
 
     const dropdown = select.querySelector('.select_dropdown');
     const label = select.querySelector('.select_label');
