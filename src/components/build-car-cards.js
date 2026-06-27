@@ -21,7 +21,7 @@ export const createListCatalog = (cars) => {
                 <div class="line"></div>
                 <p>${car.mileage} km</p>
               </div>
-               <button type="submit" id="read_more_car">Read more</button>
+               <button type="button" class="read_more_car" data-car-id="${car.id}">Read more</button>
             </div>
         `;
     }).join('');
