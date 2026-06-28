@@ -25,6 +25,32 @@ body {
     background-color: #fff;
 }
 
+#header_container {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 26px 120px;
+    background-color: rgba(242, 244, 247, 1);
+}
+
+.header_logo img {
+    width: 104px;
+}
+
+#navigation_menu {
+    display: flex;
+    align-items: center;
+    gap: clamp(18px, 3vw, 32px);
+}
+
+.nav_link {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 h1, h2, h3, h4, h5, h6, p, blockquote, figure, pre, hr {
     margin: 0;
     padding: 0;
@@ -77,4 +103,18 @@ fieldset {
 
 iframe {
     border: 0;
+}
+
+@media (max-width: 640px) {
+    #header_container {
+        padding: 18px 20px;
+    }
+
+    .header_logo img {
+        width: 92px;
+    }
+
+    .nav_link {
+        font-size: 14px;
+    }
 }

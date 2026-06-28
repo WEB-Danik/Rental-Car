@@ -7,7 +7,7 @@ import {catalogState} from "./render-catalog.js";
 const handleLoadMore = async () => {
     catalogState.page += 1;
 
-    const carsData = await getDataCars(catalogState.page, catalogState.brand);
+    const carsData = await getDataCars(catalogState.page, catalogState.filters);
     const cars = carsData.cars;
     catalogState.totalPages = carsData.totalPages;
 

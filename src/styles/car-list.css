@@ -2,9 +2,13 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 276px;
 }
 .card-image {
+    width: 276px;
+    height: 268px;
     border-radius: 14px;
+    object-fit: cover;
 }
 .card_title {
     display: flex;
@@ -266,12 +270,31 @@
 }
 
 @media (max-width: 560px) {
+    .card_container,
+    .card-image {
+        width: 100%;
+    }
+
+    .card-image {
+        height: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+    .card_title {
+        flex-wrap: wrap;
+    }
+
+    .car_description {
+        width: 100%;
+    }
+
     .car_modal {
         padding: 12px;
     }
 
     .car_modal_dialog {
         max-height: calc(100vh - 24px);
+        padding-top: 42px;
     }
 
     .booking_form {
@@ -281,5 +304,19 @@
     .car_modal_heading {
         flex-direction: column;
         gap: 4px;
+    }
+
+    .car_modal_section {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 360px) {
+    .card_title {
+        font-size: 14px;
+    }
+
+    .read_more_car {
+        font-size: 14px;
     }
 }

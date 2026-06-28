@@ -49,9 +49,9 @@ refs.allSelects.forEach(select => {
         } else {
 
             return `
-        <div class="options_select">30$</div>
-        <div class="options_select">40$</div>
-        <div class="options_select">50$</div>
+        <div class="options_select" data-value="30">30$</div>
+        <div class="options_select" data-value="40">40$</div>
+        <div class="options_select" data-value="50">50$</div>
       `;
 
         }
@@ -74,7 +74,7 @@ refs.allSelects.forEach(select => {
 
             const value = option.dataset.value || option.textContent;
 
-            selectedValue.textContent = value;
+            selectedValue.textContent = option.textContent.trim();
 
             hiddenInput.value = value;
 

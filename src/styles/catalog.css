@@ -3,16 +3,23 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-
     width: 100%;
-
     margin-top: 68px;
-    padding: 84px 120px 0 120px;
+    padding: 84px clamp(20px, 3vw, 48px) 64px;
+}
+
+.filter_toggle {
+    display: none;
+}
+
+.filter_close {
+    display: none;
 }
 
 .filter_form {
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     gap: 16px;
     margin-bottom: 56px;
 }
@@ -41,7 +48,8 @@
 
 
 .custom_select {
-    width: 300px;
+    flex: 0 0 204px;
+    width: 204px;
     position: relative;
 }
 
@@ -133,7 +141,13 @@
     display: flex;
 }
 
+.car_mileage {
+    flex: 0 0 294px;
+    width: 294px;
+}
+
 #mileage_from {
+    width: 50%;
     padding: 12px 0 12px 24px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -142,6 +156,7 @@
 }
 
 #mileage_to {
+    width: 50%;
     padding: 12px 0 12px 24px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -150,6 +165,7 @@
 }
 
 #search_btn {
+    flex: 0 0 auto;
     width: 156px;
     height: 44px;
     border-radius: 12px;
@@ -162,9 +178,11 @@
 }
 
 .container_catalog_cars {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 48px;
+    grid-template-columns: repeat(auto-fill, 276px);
+    justify-content: center;
+    gap: 48px 32px;
 }
 .btn_load_more {
     width: 156px;
@@ -177,4 +195,132 @@
 
     font-size: 16px;
     font-weight: 600;
+}
+
+@media (max-width: 1340px) {
+    .container_catalog {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 980px) {
+    .filter_form {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .custom_select,
+    .car_mileage {
+        flex: 1 1 260px;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 760px) {
+    .container_catalog {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 56px;
+    }
+
+    .container_catalog_cars {
+        gap: 36px 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container_catalog {
+        align-items: stretch;
+        position: relative;
+        margin-top: 62px;
+        padding: 36px 20px 48px;
+    }
+
+    .filter_toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        height: 46px;
+        margin-bottom: 32px;
+        border-radius: 12px;
+        background-color: rgba(52, 112, 255, 1);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .filter_form {
+        position: fixed;
+        inset: 0;
+        z-index: 900;
+        display: none;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 84px 20px 28px;
+        overflow-y: auto;
+        background-color: #fff;
+    }
+
+    .filter_form.is_open {
+        display: flex;
+    }
+
+    .filter_close {
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .filter_modal_open {
+        overflow: hidden;
+    }
+
+    .custom_select,
+    .car_mileage,
+    #search_btn {
+        flex: none;
+        width: 100%;
+    }
+
+    .container_catalog_cars {
+        grid-template-columns: 1fr;
+        justify-content: stretch;
+    }
+
+    .select_dropdown {
+        position: static;
+        margin-top: 8px;
+        box-shadow: none;
+        border: 1px solid rgba(218, 221, 225, 1);
+    }
+
+    #search_btn {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container_catalog {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
 }

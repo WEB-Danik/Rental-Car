@@ -1,8 +1,16 @@
-export const getDataCars = (page, brand) => {
+export const getDataCars = (page, filters = {}) => {
    const params = new URLSearchParams({page});
+   const normalizedFilters = typeof filters === 'string' ? {brand: filters} : filters;
 
-   if (brand) {
-       params.set('brand', brand);
+   Object.entries(normalizedFilters).forEach(([key, value]) => {
+       if (value) {
+           params.set(key, value);
+       }
+   });
+
+   if (normalizedFilters.rentalPrice) {
+       params.set('rentalPrice', normalizedFilters.rentalPrice);
+       params.delete('carPrice');
    }
 
    return fetch(`https://car-rental-api.goit.global/cars?${params.toString()}`)
