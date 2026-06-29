@@ -234,9 +234,7 @@
 @media (max-width: 640px) {
     .container_catalog {
         align-items: stretch;
-        position: relative;
         margin-top: 62px;
-        padding: 36px 20px 48px;
     }
 
     .filter_toggle {
